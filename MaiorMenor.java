@@ -1,34 +1,28 @@
 package laco02;
 import java.util.Scanner;
 
-public class MaiorMenor {
+public class casacmg  {
 
 	public static void main(String[] args) {
 
-      Scanner in= new Scanner (System.in);
+      Scanner in = new Scanner (System.in);
       
-      int anoAtual,anoNac,idade,maisVelho=0,maisNovo=900;
+      string zap, insta;
 		   
       for (int i=0;i<=10;i++) {
     	  
-    	  System.out.println("Coloque o ano atual: ");
-    	  anoAtual = in.nextInt();
+    	  System.out.println("Passa o zap: ");
+    	  zap = in.next();
     	  
-    	  System.out.println("Coloque o ano de Nascimento: ");
-    	   anoNac = in.nextInt();
+    	  System.out.println("Passa o insta: ");
+    	   insta = in.next();
     	  
-    	  idade = anoAtual-anoNac;
+    	  resposta = ("ZapZap: "+zap+' , Insta:'+insta);
     	  
-    	  System.out.println("Sua idade é: "+idade);
-    	  
-    	  if (idade > maisVelho) {
-    		  maisVelho = idade;
-    	  }
-          if (idade < maisNovo) {
-        	  maisNovo = idade;
-          }
+    	  System.out.println("Sua resposta Ã©: "+resposta);
+	      
       }
-		System.out.println("O mais novo: " +maisNovo);
-		System.out.println("O mais velho: " +maisVelho);
+		System.out.println("Passei o zap: "+zap);
+		System.out.println("Passei o insta: "+insta);
 }
 }
